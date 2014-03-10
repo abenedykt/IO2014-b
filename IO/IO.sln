@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz-WPF", "FizzBuzz-WP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{BFEB37F3-B8EC-436F-B8A8-2F66EDF79845}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoParserTest", "GeoParserTest\GeoParserTest.csproj", "{6693C12D-AFC2-4491-ADF9-30C59136D235}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BFEB37F3-B8EC-436F-B8A8-2F66EDF79845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFEB37F3-B8EC-436F-B8A8-2F66EDF79845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFEB37F3-B8EC-436F-B8A8-2F66EDF79845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6693C12D-AFC2-4491-ADF9-30C59136D235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6693C12D-AFC2-4491-ADF9-30C59136D235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6693C12D-AFC2-4491-ADF9-30C59136D235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6693C12D-AFC2-4491-ADF9-30C59136D235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
