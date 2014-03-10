@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_TDD2", "01_TDD2\01_TDD2.csproj", "{99ABC741-D2BD-4FF3-AEAE-BF088C5B0A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD_GUI", "TDD_GUI\TDD_GUI.csproj", "{37496BE8-BF74-4842-B3E0-765971B80528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsTDD", "WinFormsTDD\WinFormsTDD.csproj", "{F9DF97E5-1555-4512-AB59-12234CB3E525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Substitute", "03_Substitute\03_Substitute.csproj", "{547A441B-2F76-4ACE-B26E-B2C869B369DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3378B58E-8669-4CAD-BEF6-47067661C584}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99ABC741-D2BD-4FF3-AEAE-BF088C5B0A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99ABC741-D2BD-4FF3-AEAE-BF088C5B0A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99ABC741-D2BD-4FF3-AEAE-BF088C5B0A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99ABC741-D2BD-4FF3-AEAE-BF088C5B0A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37496BE8-BF74-4842-B3E0-765971B80528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37496BE8-BF74-4842-B3E0-765971B80528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37496BE8-BF74-4842-B3E0-765971B80528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37496BE8-BF74-4842-B3E0-765971B80528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9DF97E5-1555-4512-AB59-12234CB3E525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DF97E5-1555-4512-AB59-12234CB3E525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DF97E5-1555-4512-AB59-12234CB3E525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DF97E5-1555-4512-AB59-12234CB3E525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547A441B-2F76-4ACE-B26E-B2C869B369DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547A441B-2F76-4ACE-B26E-B2C869B369DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547A441B-2F76-4ACE-B26E-B2C869B369DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547A441B-2F76-4ACE-B26E-B2C869B369DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
