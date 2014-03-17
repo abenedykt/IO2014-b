@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zad2
 {
-    interface IGeoFileReader
+    public interface IGeoFileReader
     {
         IEnumerable<string> GetRecords();
     }

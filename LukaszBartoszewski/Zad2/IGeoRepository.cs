@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Zad2
 {
-    interface IGeoRepository
+     public interface IGeoRepository
     {
+        void Add();
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Zad2
 {
-    class GeoInport
+    public class GeoInport
     {
         private IGeoFileReader fileReader;
         private IGeoRepository repository;

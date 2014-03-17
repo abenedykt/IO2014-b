@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zad2
 {
-    interface IRepository
+    public interface IRepository
     {
         void Add(string nrDzialki, string x, string y, string minX, string minY, string maxX, string maxY);
     }
