@@ -14,23 +14,24 @@ namespace IOZad2
             Dzialka dzialka = new Dzialka();
 
             string[] lines = data.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-            Regex regex = new Regex("(?<X>)( +)(?<Y>)");
-            Match match = regex.Match(lines[1]);
+            Regex regexSrodek = new Regex("(?<X>[^ ]+)( +)(?<Y>[^ ]+)");
+            Match matchSrodek = regexSrodek.Match(lines[1]);
+
             dzialka.Srodek = new Punkt()
             {
-                X = Convert.ToDouble(match.),
-                Y = Convert.ToDouble(lines[1].Substring(firstspace, secondspace - firstspace))
+                X = Convert.ToDouble(matchSrodek.Groups["X"].Value),
+                Y = Convert.ToDouble(matchSrodek.Groups["Y"].Value)
             };
             int count = Convert.ToInt32(lines[2]);
-            for (int i = 0; i < count; i++)
+            for (int i = 3; i < count + 3; i++)
             {
-                firstspace = lines[i + 3].IndexOf(' ');
-                secondspace = lines[i + 3].IndexOf(' ', firstspace + 1);
-                int thirdspace = lines[i + 3].IndexOf(' ', secondspace + 1);
+                Regex regexWierzcholek = new Regex("(?<trash>[^ ]+)( +)(?<X>[^ ]+)( +)(?<Y>[^ ]+)");
+                Match matchWierzcholek = regexWierzcholek.Match(lines[i]);
+               
                 dzialka.Wierzcholki.Add(new Punkt()
                 {
-                    X = Convert.ToDouble(lines[i + 3].Substring(firstspace, secondspace - firstspace)),
-                    Y = Convert.ToDouble(lines[i + 3].Substring(secondspace, thirdspace - secondspace))
+                    X = Convert.ToDouble(matchWierzcholek.Groups["X"].Value),
+                    Y = Convert.ToDouble(matchWierzcholek.Groups["Y"].Value)
                 });
             }
 
