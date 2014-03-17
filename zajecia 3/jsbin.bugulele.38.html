@@ -268,87 +268,23 @@ img:active {
 </head>
   
 <body>
-
-<div ng-controller="SpicyCtrl">
- <button ng-click="chiliSpicy()">Chili</button>
- <button ng-click="jalapenoSpicy()">Jalapeño</button>
- <p>The food is {{spice}} spicy!</p>
+  
+<div ng-controller="FizzBuzzController">
+  <form novalidate class="simple-form">
+    Limit <input type="text" ng-model="Limit">
+     <button ng-click="Alert()">Generate</button>
+  </form>
 </div>
   
-  
-  
-  
 <script>
-if (location.pathname === '/welcome' || location.pathname === '/welcome/') {
-  location = '/welcome/edit?html,live';
+function FizzBuzzController ($scope) {
+  $scope.Limit = '10';
+  $scope.Table = '1';
+  
+  $scope.Alert = function() {
+     $scope.Table
+};
 }
-
-var myApp = angular.module('spicyApp1', []);
- 
-myApp.controller('SpicyCtrl', ['$scope', function($scope){
-    $scope.spice = 'very';
- 
-    $scope.chiliSpicy = function() {
-        $scope.spice = 'chili';
-    };
- 
-    $scope.jalapenoSpicy = function() {
-        $scope.spice = 'jalapeño';
-    };
-}]);
-if (window.location.pathname.indexOf('/edit') !== -1) $('a.open').click(function (event) {
-  event.preventDefault();
-  window.top.$('a[href$="' + this.hash + '"]').mousedown().click();
-});
-
-var presses = 0;
-
-var spin = [
-  "Woahohaohaohaahoahaohaohaohaohaoha...",
-  "Nononono...aiiiiiiiiiiiiieeeeeeee....",
-  "Aaaaaaaaaghhhhh...woahwoahwoahwoahwoah...",
-  "You're eeeeeeeeviiiiiiilllllllll....",
-  "Eee...eee...eee...eee...eee...",
-  "Woowoowoowoowoowoowoowoowoo..."
-];
-  
-var stop = [
-  "Please... never again.",
-  "I'm so dizzy.",
-  "That's just... cruel.",
-  "Don't you have better things to do?",
-  "I can't feel my toes... oh wait, I don't have any toes!",
-  "This isn't fun anymore.",
-  "...",
-  "I'm going to be sick.",
-  "Uh-oh, I think I just dropped some tables...",
-  "Yep, I think I'm about to SQL-project everywhere...",
-  "SELECT * FROM `stomach`...",
-  "var_dump($result)...",
-  "+_+"
-];
-
-$('#dave').mousedown(function () {
-  
-  $('#message').fadeOut(function () {
-    $(this).text(spin[presses % spin.length]);
-    presses = presses + 1;
-  }).fadeIn();
-  
-}).mouseup(function () {
-  
-  $('#message').fadeOut(function () {
-    $(this).text(stop[presses % stop.length]);
-  }).fadeIn();
-  
-  if( presses >= stop.length - 1 ) {
-	$(this).animate({left: '-999px'}, 1000 * 10, function () {
-      $(this).animate({left: '0'}, 1000 * 4);
-      presses = 0;
-    });
-  }
-  
-});
 </script>
 </body>
 </html>
