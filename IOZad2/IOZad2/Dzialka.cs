@@ -21,6 +21,38 @@ namespace IOZad2
             }
             set { _Wierzcholki = new List<Punkt>(value); }
         }
+
+        public double WierzcholkiMinX
+        {
+            get
+            {
+                return Wierzcholki.Min(n => n.X);
+            }
+        }
+
+        public double WierzcholkiMaxX
+        {
+            get
+            {
+                return Wierzcholki.Max(n => n.X);
+            }
+        }
+
+        public double WierzcholkiMinY
+        {
+            get
+            {
+                return Wierzcholki.Min(n => n.Y);
+            }
+        }
+
+        public double WierzcholkiMaxY
+        {
+            get
+            {
+                return Wierzcholki.Max(n => n.Y);
+            }
+        }
         #endregion
 
         #region public method

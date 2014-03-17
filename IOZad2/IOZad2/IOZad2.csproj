@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dzialka.cs" />
+    <Compile Include="DzialkaParser.cs" />
     <Compile Include="FileReader.cs" />
     <Compile Include="GeoImport.cs" />
     <Compile Include="IParser.cs" />

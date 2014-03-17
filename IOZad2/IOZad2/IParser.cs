@@ -8,6 +8,6 @@ namespace IOZad2
 {
     interface IParser
     {
-        Dzialka Parse(IEnumerable<string> dzialka);
+        Dzialka Parse(string data);
     }
 }
