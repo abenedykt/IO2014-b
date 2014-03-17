@@ -259,11 +259,6 @@ img:active {
 
 
 
-
-
-
-
-
 </style>
 </head>
   
@@ -274,16 +269,43 @@ img:active {
     Limit <input type="text" ng-model="Limit">
      <button ng-click="Alert()">Generate</button>
   </form>
+  <table>
+     <tr>
+        <th>id</th>
+        <th>value</th>
+    </tr>
+    <tr ng-repeat="digit in Digits">
+        <td> {{digit.id}}. </td>
+        <td> {{digit.value}} </td>  
+    </tr>
+  </table>
 </div>
   
+   
+  
 <script>
+function FizzBuzz(value) {
+  if (value % 5 === 0 & value % 3 === 0) return 'FizzBuzz';
+  if (value % 3 === 0) return 'Fizz';
+  if (value % 5 === 0) return 'Buzz';
+  return value;
+}
+
+
 function FizzBuzzController ($scope) {
   $scope.Limit = '10';
-  $scope.Table = '1';
+  $scope.Digits = [
+    {id:'1', value:'1'},
+    {id:'2', value:'2'},
+    {id:'3', value:'Fizz'}
+  ];
   
   $scope.Alert = function() {
-     $scope.Table
-};
+    $scope.Digits = [];
+    for (var i = 1; i < $scope.Limit; i++) {
+      $scope.Digits.push({id:i, value:FizzBuzz(i)});
+    }
+  };
 }
 </script>
 </body>
