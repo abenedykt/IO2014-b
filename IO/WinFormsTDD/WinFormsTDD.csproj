@@ -35,6 +35,9 @@
     <Reference Include="01_TDD2">
       <HintPath>..\01_TDD2\obj\Debug\01_TDD2.dll</HintPath>
     </Reference>
+    <Reference Include="03_Substitute">
+      <HintPath>..\03_Substitute\bin\Debug\03_Substitute.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +56,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeoImport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

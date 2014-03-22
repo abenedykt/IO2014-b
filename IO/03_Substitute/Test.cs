@@ -11,30 +11,126 @@ namespace _03_Substitute
     public class Test
     {
         #region data
-        string _data = @"               1.1-800/128
+        private const string Data = @"               1.1-800/128
         5544943.71        6532099.62         5544943.71        6532099.62 N  7
 7
               1-7923        5544969.02        6532117.26        5544969.02        6532117.26   0 N N  7
               1-7880        5544908.34        6532098.97        5544908.34        6532098.97   0 N N  7
               1-7807        5544907.94        6532075.96        5544907.94        6532075.96   0 N N  7
-              1-7856        5544928.59        6532085.45        5544928.59        6532085.45   0 N N  7
-              1-7881        5544975.70        6532098.40        5544975.70        6532098.40   0 N N  7
-              1-7907        5544972.66        6532107.54        5544972.66        6532107.54   0 N N  7
               1-7923        5544969.02        6532117.26        5544969.02        6532117.26   0 N N  7
 ";
+        private const string DataLine = "              1-7923        5544969.02        6532117.26        5544969.02        6532117.26   0 N N  7";
+
         #endregion
 
         [Fact]
         public void ForFieldReturnFieldNumber()
         {
             var fileReader = Substitute.For<IGeoFileReader>();
-            fileReader.Read("test.txt").Returns(_data);
-            var repository = Substitute.For<IGeoRepository>();
+            fileReader.Read("test.txt").Returns(Data);
             var geoImport = new GeoImport();
             var data = fileReader.Read("test.txt");
 
-            Assert.Equal("1.1-800/128", geoImport.GetFieldNumber("test.txt"));
+            Assert.Equal("1.1-800/128", geoImport.GetFieldNumber(data));
         }
 
+        [Fact]
+        public void ReturnNumberOfPoints()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(Data);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(7, geoImport.GetNumberOfPoints(data));
+        }
+
+        [Fact]
+        public void ReturnXLocalizationOfField()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(Data);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(6532099.62, geoImport.GetX(data));
+        }
+
+        [Fact]
+        public void ReturnYLocalizationOfField()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(Data);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(5544943.71, geoImport.GetY(data));
+        }
+
+        [Fact]
+        public void ReturnXLocalizationForPoint()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(DataLine);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(5544969.02, geoImport.GetXOfPoint(data));
+        }
+
+        [Fact]
+        public void ReturnYLocalizationForPoint()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(DataLine);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(6532117.26, geoImport.GetYOfPoint(data));
+        }
+
+        [Fact]
+        public void ReturnMinX()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(Data);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(5544907.94, geoImport.GetXMin(data));
+        }
+
+        [Fact]
+        public void ReturnMinY()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(Data);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(6532075.96, geoImport.GetYMin(data));
+        }
+
+        [Fact]
+        public void ReturnMaxX()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(Data);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(5544969.02, geoImport.GetXMax(data));
+        }
+
+        [Fact]
+        public void ReturnMaxY()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.Read("test.txt").Returns(Data);
+            var geoImport = new GeoImport();
+            var data = fileReader.Read("test.txt");
+
+            Assert.Equal(6532117.26, geoImport.GetYMax(data));
+        }
     }
 }
