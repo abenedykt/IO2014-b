@@ -28,6 +28,11 @@ namespace Geology
               1-7907        5544972.66        6532107.54        5544972.66        6532107.54   0 N N  7
               1-7923        5544969.02        6532117.26        5544969.02        6532117.26   0 N N  7");
             fileReader.GetRecords().Returns(LS);
+            AreaStat DesiredValue = new AreaStat { number = "1.1-800/128", x = "5544943.71", y = "6532099.62", min_x = "5544907.94", min_y = "6532075.96", max_x = "5544975.70", max_y = "6532117.26" };
+            GeoImport GI = new GeoImport(fileReader, repository);
+
+            AreaStat result = import.parse();
+            Assert.Equal(result, DesiredValue);
         }
 
     }
