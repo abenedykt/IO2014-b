@@ -1,25 +1,55 @@
-<!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
-  
-  <form ng-submit="clickEventFunction()">
-  <input type="text" placeholder="Put Number Here"/>
-  <button type="submit">LetsDoThis</button>
-  </form>
-  
-<ol>
-  <li>1</li>
-  <li>2</li>
-  <li>Fizz</li>
-  <li>4</li>
-  <li>Buzz</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>Fizz</li>
-  <li>Buzz</li>
-</ol>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/rubasagi/3/edit
+-->
+  <body ng-app="myModule" ng-controller="myController">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
+    
+  <input type="text" ng-model="Number" placeholder="Put a Number Here"/>
+    
+    <button ng-click="changeFirstUsersFirstName()">Go</button>
+    
+     <div ng-repeat="number in Numbers">
+         {{number.id}} ===> {{number.number}}
+    </div>
 
+  
+<style id="jsbin-css">
+
+</style>
+<script>
+function FizzBuzz(value) {
+  
+  if (value % 3 === 0)
+    {
+      if (value % 5 === 0)
+        return 'FizzBuzz';
+      else
+        return 'Fizz';
+    }
+  if (value % 5 === 0) 
+    return 'Buzz';
+
+  return value;
+}
+
+var myModule = angular.module('myModule', []);
+
+myModule.controller('myController', function($scope) {
+    
+    $scope.changeFirstUsersFirstName = function() {
+        $scope.Numbers = []; // Inicjalizacja tablicy
+      
+      for(var i = 1; i<= $scope.Number; i++)
+        {
+        $scope.Numbers.push({id:i, number:FizzBuzz(i)});
+        }
+    };
+
+});
+</script>
 </body>
 </html>
+   
