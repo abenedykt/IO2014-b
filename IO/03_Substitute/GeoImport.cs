@@ -65,7 +65,6 @@ namespace _03_Substitute
         {
             var lines = GetPoints(data);
             return lines.Select(GetXOfPoint).OrderBy(n => n).FirstOrDefault();
-
         }
 
         public double GetYMin(string data)
@@ -89,6 +88,11 @@ namespace _03_Substitute
         {
             var lines = GetPoints(data);
             return lines.Select(GetYOfPoint).OrderBy(n => n).Reverse().FirstOrDefault();
+        }
+
+        public IEnumerable<string> SplitFields(string data)
+        {
+            return Regex.Split(data, @"(?:\r\n){2,}");
         }
     }
 }
