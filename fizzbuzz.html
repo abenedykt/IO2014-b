@@ -5,29 +5,44 @@
   </head>
   <script type="text/javascript">
     function FizzBuzz($scope) {
-    $scope.todos = [
-    {text:'testsss'}];
+    $scope.todos = [];
     
       $scope.addTodo = function() {
-    for (var i=0;i<2;i++)
+         $scope.todos = [];
+    for (var i=1;i<=$scope.txt;i++)
     { 
-    document.write("sad");
+       
+      $scope.todos.push({text:fb(i)});
+
     }
+        return $scope.todos;
+     
   };
   };
+    function fb($i)
+    {
+      if($i%3==0)
+        {
+        if($i%5==0)
+          {
+            return 'FizzBuzz';
+          }
+        return 'Fizz';
+        }
+      else if($i%5==0)
+        return 'Buzz';
+      return $i;
+    }
     </script>
+  
   <body style="background-repeat: no-repeat">
-    <p style="margin: 10px">Jaki sobie tekst :) Yo </p>
-    
-    <form method="POST" ng-submit="addTodo()">
-Wpisz cos: <input type="text" name="firstname" ng-model="txt">
-      <input type="submit" value="Wyslij">
-</form>
-    
-    <ol ng-controller="FizzBuzz">
-      <li ng-repeat="todo in todos">{{todo.text}}</li>
+    <div ng-controller="FizzBuzz">
+Wpisz cos: <input type="text" ng-model="txt">
+    <ol>
+      <li ng-repeat="todo in addTodo()">{{todo.text}}</li>
   
         
       </ol>
+    </div>
 </body>
 </html>
