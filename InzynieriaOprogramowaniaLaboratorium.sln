@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zajecia1_FizzBazz_GUI_WPF",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zajecia2_Geo", "Zajecia2_Geo\Zajecia2_Geo.csproj", "{66511CEA-3324-46FB-AE17-55D509D4FFFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zajecia3_MVCAngular", "Zajecia3_MVCAngular\Zajecia3_MVCAngular.csproj", "{0A6B8BAE-C79D-4FFF-A711-C899D4D7CFE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{66511CEA-3324-46FB-AE17-55D509D4FFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66511CEA-3324-46FB-AE17-55D509D4FFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66511CEA-3324-46FB-AE17-55D509D4FFFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6B8BAE-C79D-4FFF-A711-C899D4D7CFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6B8BAE-C79D-4FFF-A711-C899D4D7CFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6B8BAE-C79D-4FFF-A711-C899D4D7CFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6B8BAE-C79D-4FFF-A711-C899D4D7CFE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

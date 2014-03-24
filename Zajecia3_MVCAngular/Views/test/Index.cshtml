@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+    <style>
+        .tip {
+            margin: 2em;
+        }
+    </style>
+</head>
+<body ng-app>
+    <h1>Fizz Buzz Game</h1>
+    <div style='margin:2em' ng-controller='fizzBuzz'>
+        <span class='tip'>podaj wartosc :</span>
+        <input type='text' class='form-control' style='width:10em' ng-model='number'>
+
+        <h1>wynik:</h1>
+        <ol>
+            <li ng-repeat="r in result() track by $index">{{r}}</li>
+        </ol>
+    </div>
+</body>
+<script>
+    function fizzBuzz($scope, $http) {
+
+        $scope.number = 1;
+        //$scope.example = new Array(1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz');
+        
+        $scope.result = function () {
+            if ($scope.number) {
+                    $http({
+                        method: 'POST',
+                        url: 'http://localhost:9293/test/GetNumbersFromServer',
+                        data: 'number=' + $scope.number,
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        success: function (data) {
+                            $scope.example= data;
+                        }
+                    })
+                }
+
+
+
+
+                //$http.get('http://localhost:9293/test/GetNumbersFromServer?number=' + $scope.number).success(successCallback);
+                //function successCallback(data){
+                //    return data;
+                //}
+            
+            return $scope.example.slice(0, $scope.number);
+            }
+        
+    }
+</script>
+</html>
+
+
+

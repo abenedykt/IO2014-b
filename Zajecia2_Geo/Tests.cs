@@ -22,15 +22,23 @@ namespace Zajecia2_Geo
               1-7923        5544969.02        6532117.26        5544969.02        6532117.26   0 N N  7";
 
         [Fact]
-        public void Sprawdz_Wartosci_Na_Wyjsciu()
+        public void Czytanie_Z_Pliku()
         {
             var fileReader = Substitute.For<IGeoFileReader>();
-            var repository = Substitute.For<IGeoRepository>();
-           // fileReader.GetRecords().Returns(() => new [] { "", "", "" });
-            fileReader.GetRecords().Returns(new List<string>(inputString.Split(new char[]{' '},2,StringSplitOptions.RemoveEmptyEntries).ToArray()));
-            var import = new GeoImport(fileReader, repository);
-            Assert.Equal(fileReader.GetRecords().FirstOrDefault().ToString(), "1.1-800/128");
+            fileReader.GetRecords("data.txt").Returns(inputString);
+            Assert.Equal(fileReader.GetRecords("data.txt"),inputString);
+        }
 
+        [Fact]
+        public void Czytaj_Numer()
+        {
+            var fileReader = Substitute.For<IGeoFileReader>();
+            fileReader.GetRecords("data.txt").Returns(inputString);
+            
+            var import = new GeoImport();
+            var number = import.GetNumber(fileReader.GetRecords("data.txt"));
+
+            Assert.Equal(number, "1.1-800/128");
         }
     }
 }

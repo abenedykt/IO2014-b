@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Zajecia2_Geo
 {
@@ -17,7 +18,15 @@ namespace Zajecia2_Geo
             this.repository = repository;
         }
 
+        public GeoImport()
+        {
+            // TODO: Complete member initialization
+        }
         
-        
+
+        internal object GetNumber(string p)
+        {
+            return p.Split(' ').FirstOrDefault();
+        }
     }
 }

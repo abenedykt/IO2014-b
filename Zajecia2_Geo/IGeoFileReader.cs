@@ -7,6 +7,6 @@ namespace Zajecia2_Geo
 {
     public interface IGeoFileReader
     {
-        IEnumerable<string> GetRecords();
+        string GetRecords(string fileName);
     }
 }
