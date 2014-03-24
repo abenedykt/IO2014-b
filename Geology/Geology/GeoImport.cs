@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,10 +42,10 @@ namespace Geology
             for (int i = 3; i < VCount + 2; i++)
             {
                 string[] line = lines[i].Split(new char[]{' '},StringSplitOptions.RemoveEmptyEntries);
-                if (float.Parse(line[1]) < float.Parse(Parsed.min_x)) Parsed.min_x = line[1];
-                if (float.Parse(line[2]) < float.Parse(Parsed.min_y)) Parsed.min_y = line[2];
-                if (float.Parse(line[1]) > float.Parse(Parsed.max_x)) Parsed.min_x = line[1];
-                if (float.Parse(line[1]) > float.Parse(Parsed.max_y)) Parsed.min_y = line[2];
+                if (float.Parse(line[1], CultureInfo.InvariantCulture) < float.Parse(Parsed.min_x, CultureInfo.InvariantCulture)) Parsed.min_x = line[1];
+                if (float.Parse(line[2], CultureInfo.InvariantCulture) < float.Parse(Parsed.min_y, CultureInfo.InvariantCulture)) Parsed.min_y = line[2];
+                if (float.Parse(line[1], CultureInfo.InvariantCulture) > float.Parse(Parsed.max_x, CultureInfo.InvariantCulture)) Parsed.max_x = line[1];
+                if (float.Parse(line[1], CultureInfo.InvariantCulture) > float.Parse(Parsed.max_y, CultureInfo.InvariantCulture)) Parsed.max_y = line[2];
             }
 
             return Parsed;
