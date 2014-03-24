@@ -2,11 +2,11 @@
   <head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
   </head>
-  <body>
+  <body ng-controller='FizzBuzz'>
     
-     <input type="text" ng-model="Count" placeholder="4">
+     <input type="text" ng-model="count" placeholder="4">
      <input type="Submit" value="Fizz">      
-    
+    <!--
     <ol>
      <li>1</li>
      <li>2</li>
@@ -19,5 +19,21 @@
      <li>Fizz</li>
      <li>Buzz</li>
     </ol>
+    -->
+    <ol>
+      <li ng-repeat ="r in result() track by $index">{{r}}</li>
+    </ol>
   </body>
+  <script>
+    function FizzBuzz ($scope, $http)
+    {
+      
+      $scope.count = 4
+      $scope.values = new Array(1,2,'Fizz',4,'Buzz','Fizz', 7,8,'Fizz','Buzz');
+      $scope.result = function() 
+      {
+        return $scope.values.slice(0, $scope.count)
+      }
+    }
+  </script>
 </html>
