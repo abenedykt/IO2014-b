@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoParserTest", "GeoParserTest\GeoParserTest.csproj", "{6693C12D-AFC2-4491-ADF9-30C59136D235}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzMVC", "FizzBuzzMVC\FizzBuzzMVC.csproj", "{7C2AE0D6-2B90-4297-ADB3-C45C26BA7B5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6693C12D-AFC2-4491-ADF9-30C59136D235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6693C12D-AFC2-4491-ADF9-30C59136D235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6693C12D-AFC2-4491-ADF9-30C59136D235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2AE0D6-2B90-4297-ADB3-C45C26BA7B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2AE0D6-2B90-4297-ADB3-C45C26BA7B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2AE0D6-2B90-4297-ADB3-C45C26BA7B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2AE0D6-2B90-4297-ADB3-C45C26BA7B5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

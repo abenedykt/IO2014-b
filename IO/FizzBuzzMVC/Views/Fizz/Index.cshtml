@@ -1,0 +1,52 @@
+﻿@model dynamic
+
+@{
+    
+<html ng-app>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.2/angular.min.js"></script>
+    </head>
+  <script type="text/javascript">
+    function FizzBuzz($scope, $http) {
+    $scope.todos = [];
+    
+      $scope.addTodo = function() {
+         $scope.todos = [];
+    for (var i=1;i<=$scope.txt;i++)
+    { 
+       
+      $scope.todos.push({text:fb(i)});
+
+    }
+        return $scope.todos;
+     
+  };
+  };
+    function fb($i)
+    {
+      if($i%3==0)
+        {
+        if($i%5==0)
+          {
+            return 'FizzBuzz';
+          }
+        return 'Fizz';
+        }
+      else if($i%5==0)
+        return 'Buzz';
+      return $i;
+    }
+    </script>
+  
+  <body style="background-repeat: no-repeat">
+    <div ng-controller="FizzBuzz">
+Wpisz cos: <input type="text" ng-model="txt">
+    <ol>
+      <li ng-repeat="todo in addTodo()">{{todo.text}}</li>
+  
+        
+      </ol>
+    </div>
+</body>
+</html>
+}
