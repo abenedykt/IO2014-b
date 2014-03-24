@@ -1,0 +1,16 @@
+﻿@model IEnumerable<_04_FizzBuzzMVC.Models.Value>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@using (Html.BeginForm("GetValues", "FizzBuzz"))
+{
+    @Html.TextBox("value")
+    <input type="submit" value="Search" />
+}
+
+</table>

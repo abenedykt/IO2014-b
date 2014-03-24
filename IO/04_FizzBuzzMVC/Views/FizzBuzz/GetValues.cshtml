@@ -1,0 +1,66 @@
+﻿@model IEnumerable<_04_FizzBuzzMVC.Models.Value>
+
+@{
+    ViewBag.Title = "GetValues";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script>
+    function fizzBuzz($scope, $http) {
+
+        $scope.number = 1;
+        $http.get("http://localhost:13878/FizzBuzz/GetStringValues/?value='12'"); //+ $scope.number).success(function(data) {
+        //    $scope.example = data;
+        //    $scope.result = function() {
+
+        //        console.log($scope.number);
+        //        return $scope.example.slice(0, $scope.number);
+        //    };
+        //});
+
+
+        //$scope.result = function () {
+
+        //    console.log($scope.number);
+        //    return $scope.example.slice(0, $scope.number);
+        //}
+    }
+</script>
+
+<div style='margin:2em' ng-controller='fizzBuzz'>
+    <span class='tip'>podaj wartosc :</span>
+    <input type='text' class='form-control' style='width:10em' ng-model='number'>
+
+    <h1>wynik:</h1>
+    <ol>
+        <li ng-repeat="r in result() track by $index">{{r}}</li>
+    </ol>
+</div>
+
+
+
+<h2>Wartości</h2>
+
+@using (Html.BeginForm("GetValues", "FizzBuzz"))
+{
+    @Html.TextBox("value")
+    <input type="submit" value="Search" />
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Number)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number)
+            </td>
+        </tr>
+    }
+
+</table>
