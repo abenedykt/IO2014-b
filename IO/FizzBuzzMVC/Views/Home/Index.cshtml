@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+<!doctype html>
+@*<html ng-app>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.3/angular.min.js"></script>
+</head>
+<body>
+    Ilosc:  <input type="integer" ng-model="numLimit">
+    <div ng-controller="ListCtrl">
+        <ol>
+            <li ng-repeat="name in names | limitTo:numLimit">{{name}}</li>
+        </ol>
+    </div>
+    <script>
+        function ListCtrl($scope) {
+            $scope.names = ['1', '2', 'Fizz', '4', 'Buzz'];
+        }
+    </script>
+</body>
+</html>*@
+
+<html ng-app>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.3/angular.min.js"></script>
+</head>
+<body>
+
+    <div ng-controller="FizzBuzz">
+        Ilosc:  <input type="text" ng-model="txt">
+        <ol>
+            <li ng-repeat="tab in addTab()">{{tab.text}}</li>
+        </ol>
+    </div>
+    
+    <script>
+        function FizzBuzz($scope) {
+            $scope.tab = [];
+            $scope.addTab = function () {
+                $scope.tab = [];
+                for (var i = 1; i <= $scope.txt; i++) {
+                    $scope.tab.push({ text: Replace(i) });
+                }
+                return $scope.tab;
+            };
+        }
+
+        function Replace($i) {
+            if ($i % 3 === 0) {
+                if ($i % 5 === 0) {
+                    return 'FizzBuzz';
+                }
+                return 'Fizz';
+            }
+            else if ($i % 5 === 0)
+                return 'Buzz';
+            return $i;
+        }
+    </script>
+
+</body>
+</html>

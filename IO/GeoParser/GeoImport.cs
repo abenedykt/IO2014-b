@@ -32,6 +32,8 @@ namespace GeoParser
             }
             parsed.Add(xs.Max().ToString());
             parsed.Add(ys.Max().ToString());
+            parsed.Add(xs.Min().ToString());
+            parsed.Add(ys.Min().ToString());
             return parsed;
         }
     }
