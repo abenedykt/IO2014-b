@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geology
 {
-    interface IGeoRepository
+    public interface IGeoRepository
     {
         void Add(AreaStat A);
     }

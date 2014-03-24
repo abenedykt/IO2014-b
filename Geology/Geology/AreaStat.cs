@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geology
 {
-    class AreaStat
+    public class AreaStat
     {
         public AreaStat()
         {
