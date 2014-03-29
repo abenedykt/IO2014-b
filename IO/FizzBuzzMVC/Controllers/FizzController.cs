@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using FizzBuzzMVC.Models;
 
 namespace FizzBuzzMVC.Controllers
 {
@@ -21,16 +20,12 @@ namespace FizzBuzzMVC.Controllers
         [HttpPost]
         public ActionResult FizzBuzz(int p)
         {
+            Game game = new Game();
+            
             var lista = new List<string>();
             for (int i = 1; i <= p; i++)
             {
-                if (i == 0) lista.Add(i.ToString());
-                else if (i % 5 == 0)
-                    lista.Add(i%3 == 0 ? "FizzBuzz" : "Buzz");
-                else if (i % 3 == 0)
-                    lista.Add("Fizz");
-                else
-                lista.Add(i.ToString());
+                    lista.Add(game.Say(i));
             }
             
             return PartialView("_FizzBuzz", lista);
