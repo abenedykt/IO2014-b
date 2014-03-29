@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using FizzBuzzMVC.Models;
 
 namespace FizzBuzzMVC.Controllers
 {
@@ -17,82 +18,23 @@ namespace FizzBuzzMVC.Controllers
 
         //
         // GET: /Fizz/Details/5
-        public ActionResult FizzBuzz(int value)
-        {
-
-            return View();
-        }
-
-        //
-        // GET: /Fizz/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        //
-        // POST: /Fizz/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult FizzBuzz(int p)
         {
-            try
+            var lista = new List<string>();
+            for (int i = 1; i <= p; i++)
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                if (i == 0) lista.Add(i.ToString());
+                else if (i % 5 == 0)
+                    lista.Add(i%3 == 0 ? "FizzBuzz" : "Buzz");
+                else if (i % 3 == 0)
+                    lista.Add("Fizz");
+                else
+                lista.Add(i.ToString());
             }
-            catch
-            {
-                return View();
-            }
+            
+            return PartialView("_FizzBuzz", lista);
         }
-
-        //
-        // GET: /Fizz/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        //
-        // POST: /Fizz/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        //
-        // GET: /Fizz/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        //
-        // POST: /Fizz/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
     }
 }
