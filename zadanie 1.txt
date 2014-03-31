@@ -1,12 +1,17 @@
 Augustyn Mateusz
+<<<<<<< HEAD
+Artur Jêdrysek
+Przemyk Pawe³
+=======
 Jêdrysek Artur
 Przemyk Dzbanek
+>>>>>>> a55690b334c229fd7eeac16f4933a0d0552f64ec
 Wróbel Wojciech
 Bartoszewski Ziemowit
 Krawiec Ziemowit
 Rafacz Ziemowit
 Niezgoda Ziemowit
-Borys Tomasz
-Sojka Przemys³aw
+Borys Ziemowit
+Sojka asdasda
 Bogda³ £ukasz
 Janik Zenon

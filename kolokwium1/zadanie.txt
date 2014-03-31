@@ -1,0 +1,5 @@
+proszê obliczyæ :
+
+niestabilnoœæ oraz abstrakcyjnoœæ dla projektu Metryki
+
+proszê okreœliæ z³o¿onoœæ obliczeniow¹ dla Algorytmu 1 oraz Algorytmu2 
