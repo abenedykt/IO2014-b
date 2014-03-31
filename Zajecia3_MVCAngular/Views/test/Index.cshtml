@@ -26,21 +26,21 @@
     function fizzBuzz($scope, $http) {
 
         $scope.number = 1;
-        //$scope.example = new Array(1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz');
+        $scope.example = new Array();
         
         $scope.result = function () {
             if ($scope.number) {
-                    $http({
-                        method: 'POST',
-                        url: 'http://localhost:9293/test/GetNumbersFromServer',
-                        data: 'number=' + $scope.number,
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        success: function (data) {
-                            $scope.example= data;
-                        }
-                    })
+                $get({
+                    method: 'POST',
+                    url: 'http://localhost:9293/test/GetNumbersFromServer',
+                    data: 'number=' + $scope.number,
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    success: function (data) {
+                        $scope.example = data;
+                    }
+                });
                 }
 
 
