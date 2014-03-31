@@ -1,0 +1,5 @@
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Złożoność\bin\Debug\Złożoność.dll
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Złożoność\bin\Debug\Złożoność.pdb
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Złożoność\obj\Debug\Złożoność.csprojResolveAssemblyReference.cache
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Złożoność\obj\Debug\Złożoność.dll
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Złożoność\obj\Debug\Złożoność.pdb

@@ -1,0 +1,21 @@
+C:\Krzysztof Bizoń\FizzBuzz1\FizzBuzz1\bin\Debug\FizzBuzz1.dll
+C:\Krzysztof Bizoń\FizzBuzz1\FizzBuzz1\bin\Debug\FizzBuzz1.pdb
+C:\Krzysztof Bizoń\FizzBuzz1\FizzBuzz1\bin\Debug\xunit.dll
+C:\Krzysztof Bizoń\FizzBuzz1\FizzBuzz1\bin\Debug\xunit.xml
+C:\Krzysztof Bizoń\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.csprojResolveAssemblyReference.cache
+C:\Krzysztof Bizoń\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.dll
+C:\Krzysztof Bizoń\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.pdb
+C:\Users\Grzegorz\Desktop\FizzBuzz1\FizzBuzz1\bin\Debug\FizzBuzz1.dll
+C:\Users\Grzegorz\Desktop\FizzBuzz1\FizzBuzz1\bin\Debug\FizzBuzz1.pdb
+C:\Users\Grzegorz\Desktop\FizzBuzz1\FizzBuzz1\bin\Debug\xunit.dll
+C:\Users\Grzegorz\Desktop\FizzBuzz1\FizzBuzz1\bin\Debug\xunit.xml
+C:\Users\Grzegorz\Desktop\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.csprojResolveAssemblyReference.cache
+C:\Users\Grzegorz\Desktop\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.dll
+C:\Users\Grzegorz\Desktop\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.pdb
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\RafaczGrzegorz\FizzBuzz1\FizzBuzz1\bin\Debug\FizzBuzz1.dll
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\RafaczGrzegorz\FizzBuzz1\FizzBuzz1\bin\Debug\FizzBuzz1.pdb
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\RafaczGrzegorz\FizzBuzz1\FizzBuzz1\bin\Debug\xunit.dll
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\RafaczGrzegorz\FizzBuzz1\FizzBuzz1\bin\Debug\xunit.xml
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\RafaczGrzegorz\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.csprojResolveAssemblyReference.cache
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\RafaczGrzegorz\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.dll
+C:\Users\Grzegorz\Documents\GitHub\IO2014-b\RafaczGrzegorz\FizzBuzz1\FizzBuzz1\obj\Debug\FizzBuzz1.pdb
