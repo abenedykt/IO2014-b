@@ -1,30 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
-using System.Web.Mvc;
+using FizzBuzz_MVC.Models;
 
 namespace FizzBuzz_MVC.Controllers
 {
     public class FizzBuzzController : ApiController
     {
-        //
-        // GET: /FizzBuzz/
+        private int number;
 
-        public ActionResult Index()
+        // GET api/fizzbuzz
+        public IEnumerable<string> Get()
         {
-            return View();
+            var game = new Game(5);
+            return game.FizzBuzz;
         }
 
-        public IHttpActionResult GetProduct(int id)
+        // POST api/fizzbuzz
+        public void Post(Object number)
         {
-            var product = products.FirstOrDefault((p) => p.Id == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            return Ok(product);
+            this.number = Convert.ToInt32(number);
         }
     }
 }
