@@ -9,6 +9,6 @@ namespace Repository
 {
     public interface IRepository
     {
-        IEnumerable<string> GetAllEvents();
+        IEnumerable<Event.IEvent> GetAllEvents();
     }
 }

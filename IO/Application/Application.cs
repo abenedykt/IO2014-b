@@ -13,8 +13,9 @@ namespace Application
 
         public Application()
         {
-            var _events = new Repository.TxtRepository("text.txt");
-            _events.GetAllEvents();
+            var _events = new Repository.TxtRepository("txt.txt");
+            Events = _events.GetAllEvents();
         }
+
     }
 }

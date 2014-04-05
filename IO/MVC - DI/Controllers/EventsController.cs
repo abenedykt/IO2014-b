@@ -8,11 +8,17 @@ namespace MVC___DI.Controllers
 {
     public class EventsController : Controller
     {
+        private Application.IApplication _application;
+
+        public EventsController(Application.IApplication application)
+        {
+            _application = application;
+        }
         //
         // GET: /Events/
         public ActionResult Index()
         {
-            return View();
+            return View(_application.Events);
         }
 
         //

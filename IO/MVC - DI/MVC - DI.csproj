@@ -224,10 +224,10 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Events\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Events\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -240,6 +240,10 @@
     <ProjectReference Include="..\Application\Application.csproj">
       <Project>{06244bc2-5fb1-41cc-98a4-6eca8544a208}</Project>
       <Name>Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Event\Event.csproj">
+      <Project>{41110D3F-FD80-4002-B626-D664CB9925B6}</Project>
+      <Name>Event</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

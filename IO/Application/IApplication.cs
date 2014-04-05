@@ -9,6 +9,6 @@ namespace Application
 {
     public interface IApplication
     {
-        IEnumerable<Event.IEvent> Events { get; set; }
+        IEnumerable<IEvent> Events { get; set; }
     }
 }

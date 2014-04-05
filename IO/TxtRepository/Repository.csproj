@@ -43,6 +43,12 @@
     <Compile Include="TxtRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Event\Event.csproj">
+      <Project>{41110d3f-fd80-4002-b626-d664cb9925b6}</Project>
+      <Name>Event</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

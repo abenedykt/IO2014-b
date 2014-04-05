@@ -21,7 +21,7 @@ namespace MVC___DI
 
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
-            builder.RegisterType<Application.Application().As<Application.IApplication>();
+            builder.RegisterType<Application.Application>().As<Application.IApplication>();
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
