@@ -15,7 +15,7 @@ namespace CLIViewer
 
         public static void bind()
         {
-            builder.RegisterType<Application>().As<IApplication>();            
+            builder.RegisterType<Application_reverse>().As<IApplication>();            
         }
         
     }
