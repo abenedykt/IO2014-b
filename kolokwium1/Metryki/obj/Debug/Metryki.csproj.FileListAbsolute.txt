@@ -1,5 +1,0 @@
-C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Metryki\bin\Debug\Metryki.dll
-C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Metryki\bin\Debug\Metryki.pdb
-C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Metryki\obj\Debug\Metryki.csprojResolveAssemblyReference.cache
-C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Metryki\obj\Debug\Metryki.dll
-C:\Users\Grzegorz\Documents\GitHub\IO2014-b\kolokwium1\Metryki\obj\Debug\Metryki.pdb
