@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AppInterface;
 using AppLogic;
+using Autofac;
 
 namespace CLIViewer
 {
@@ -12,7 +13,14 @@ namespace CLIViewer
     {
         static void Main(string[] args)
         {
-            IApplication App = new Application();
+            DIContainer.bind();
+            IContainer container;
+            IApplication App;
+            using (container = DIContainer.builder.Build())
+            {
+                App = container.Resolve<IApplication>();
+            }
+            
             foreach (IEvent item in App.Events())
             {
                 Console.WriteLine(item.Content);
