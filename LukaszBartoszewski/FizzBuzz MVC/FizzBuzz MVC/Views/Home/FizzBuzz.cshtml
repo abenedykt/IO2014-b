@@ -12,8 +12,8 @@
     <button ng-click="GetNumber()">Go</button>
     
     
-    <div ng-repeat="number in Numbers">
-    ===> {{number}}
+    <div ng-repeat="number in Numbers track by $index">
+        ===> {{number}}
     </div>
 
     <style id="jsbin-css">
@@ -27,14 +27,14 @@
 
             $scope.GetNumber = function () {
 
-                $http.get('/api/FizzBuzz', {
-                    params: { Number: $scope.Number }
-                })
-            .success(function (data) {
-                $scope.Numbers = data;
-            });
-
-            $http.post('/api/FizzBuzz', $scope.Number)
+                $http.post('/api/FizzBuzz', $scope.Number).success(function() {
+                    $http.get('/api/FizzBuzz', {
+                        params: { Number: $scope.Number }
+                    })
+                    .success(function (data) {
+                        $scope.Numbers = data;
+                    });
+                });
             };
         });
 

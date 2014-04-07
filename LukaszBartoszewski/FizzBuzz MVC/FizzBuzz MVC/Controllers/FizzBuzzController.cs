@@ -10,19 +10,19 @@ namespace FizzBuzz_MVC.Controllers
 {
     public class FizzBuzzController : ApiController
     {
-        private int number;
+        private static int _number;
 
         // GET api/fizzbuzz
         public IEnumerable<string> Get()
         {
-            var game = new Game(5);
+            var game = new Game(_number);
             return game.FizzBuzz;
         }
 
         // POST api/fizzbuzz
-        public void Post(Object number)
+        public void Post(Object number1)
         {
-            this.number = Convert.ToInt32(number);
+            _number = Convert.ToInt32(number1);
         }
     }
 }
