@@ -9,7 +9,7 @@
 				int q = Partition(input, left, right);
 				Sort(input, left, q - 1);
 				Sort(input, q + 1, right);
-			}
+			}+
 		}
 
 		private static int Partition(int[] input, int left, int right)
