@@ -20,9 +20,9 @@ namespace _05_MVC
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             var builder = new ContainerBuilder(); 
-            builder.RegisterControllers(typeof(MvcApplication).Assembly); 
-            builder.RegisterType<Application>().As<IApplication>(); var container = builder.Build();
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            //builder.RegisterControllers(typeof(MvcApplication).Assembly); 
+            //builder.RegisterType<Application>().As<IApplication>(); var container = builder.Build();
+            //DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
     }
 }
