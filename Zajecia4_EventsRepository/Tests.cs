@@ -14,13 +14,13 @@ using System.Xml.Linq;namespace Zajecia4_EventsRepository
     {
         string inputXML = "<events><event><name>PierwszyEvent</name><where>Bielsko</where></event></events>";
 
-        [Fact]
-        public void CzyDobrzeCzytaZPliku()
-        {
-            var fileReader = Substitute.For<IRepository>();
-            fileReader.ReadXMLFromFile("data.txt").Returns(XDocument.Parse(inputXML));
-            Assert.Equal(fileReader.ReadXMLFromFile("data.txt"), XDocument.Parse(inputXML));
-        }
+        //[Fact]
+        //public void CzyDobrzeCzytaZPliku()
+        //{
+        //    var fileReader = Substitute.For<IRepository>();
+        //    fileReader.ReadXMLFromFile("data.txt").Returns(XDocument.Parse(inputXML));
+        //    Assert.Equal(fileReader.ReadXMLFromFile("data.txt"), XDocument.Parse(inputXML));
+        //}
 
        
     }
