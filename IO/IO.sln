@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{47405D92-45F9-410C-A1BB-32750FF86DE4}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRepository", "IRepository\IRepository.csproj", "{35410126-CCF0-414D-8E5A-CA03224DE3CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Application", "MVC_Application\MVC_Application.csproj", "{263727C4-984F-4CB6-A4C0-3478E6A9A817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP_Obwod", "LSP_Obwod\LSP_Obwod.csproj", "{AA3E6327-4278-49BE-91F2-78DC8ED20861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{263727C4-984F-4CB6-A4C0-3478E6A9A817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{263727C4-984F-4CB6-A4C0-3478E6A9A817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{263727C4-984F-4CB6-A4C0-3478E6A9A817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3E6327-4278-49BE-91F2-78DC8ED20861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3E6327-4278-49BE-91F2-78DC8ED20861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3E6327-4278-49BE-91F2-78DC8ED20861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3E6327-4278-49BE-91F2-78DC8ED20861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
