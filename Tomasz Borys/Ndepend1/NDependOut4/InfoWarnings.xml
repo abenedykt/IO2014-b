@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<InfoWarnings>
+  <Info>Begin full analysis with NDepend v5.2.1.8320</Info>
+  <Info>No Baseline for Comparison loaded.</Info>
+  <Info>Concurrent mode</Info>
+  <Warning>Assembly {ClassLibrary4} doesn't contain any type.</Warning>
+  <Info>.NET Assembly loaded from {C:\Windows\Microsoft.NET\Framework\v4.0.30319} 
+   mscorlib.dll   v4.0.0.0</Info>
+  <Warning>No application or third party assembly found in directory {C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF}</Warning>
+  <Info>.NET Assemblies loaded from {C:\Users\student\Desktop\tb\Ndepend1\ClassLibrary1\bin\Debug} 
+   ClassLibrary4.dll   v1.0.0.0
+   ClassLibrary1.dll   v1.0.0.0</Info>
+  <Info>.NET Assemblies loaded from {C:\Users\student\Desktop\tb\Ndepend1\ConsoleApplication1\bin\Debug} 
+   ClassLibrary3.dll   v1.0.0.0
+   ConsoleApplication1.exe   v1.0.0.0</Info>
+  <Info>2 source files parsed ; all source files found ; all source files in-sync with PDB</Info>
+  <Info>0 code rule has been extracted from code.</Info>
+  <Info>No dependency cycle detected in assemblies referencement graph.</Info>
+  <Info>05-05-2014 18:11:22 Analyse dependencies of your application.</Info>
+  <Info>05-05-2014 18:11:23 Execute queries and rules</Info>
+  <Warning>2 critical rules are violated.
+  - Potentially dead Methods
+  - Interface name should begin with a 'I'</Warning>
+  <Info>05-05-2014 18:11:24 NDepend analysis done. Duration: 00:02</Info>
+  <Info>05-05-2014 18:11:24 Building the report (standard).</Info>
+</InfoWarnings>
