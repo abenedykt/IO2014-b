@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<InfoWarnings>
+  <Info>Begin full analysis with NDepend v5.2.1.8320</Info>
+  <Info>No Baseline for Comparison loaded.</Info>
+  <Info>Concurrent mode</Info>
+  <Info>.NET Assembly loaded from {C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319} 
+   mscorlib.dll   v4.0.0.0</Info>
+  <Warning>No application or third party assembly found in directory {C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\WPF}</Warning>
+  <Info>.NET Assembly loaded from {c:\Users\khoga_000\documents\visual studio 2013\Projects\NDepend\NDepend\bin\Debug} 
+   NDepend.exe   v1.0.0.0</Info>
+  <Info>.NET Assembly loaded from {C:\Users\khoga_000\documents\visual studio 2013\Projects\NDepend\NDepend1\bin\Debug} 
+   NDepend1.exe   v1.0.0.0</Info>
+  <Info>.NET Assembly loaded from {C:\Users\khoga_000\documents\visual studio 2013\Projects\NDepend\NDepend2\bin\Debug} 
+   NDepend2.exe   v1.0.0.0</Info>
+  <Warning>No application or third party assembly found in directory {C:\Users\khoga_000\documents\visual studio 2013\Projects\Zad2-Bazy\Zad2-Bazy\bin\Debug}</Warning>
+  <Info>.NET Assembly loaded from {C:\Users\khoga_000\documents\visual studio 2013\Projects\NDepend\NDepend3\bin\Debug} 
+   NDepend3.exe   v1.0.0.0</Info>
+  <Info>12 source files parsed ; all source files found ; all source files in-sync with PDB</Info>
+  <Info>0 code rule has been extracted from code.</Info>
+  <Info>No dependency cycle detected in assemblies referencement graph.</Info>
+  <Info>05/05/2014 18:10:52 Analyse dependencies of your application.</Info>
+  <Info>05/05/2014 18:10:53 Execute queries and rules</Info>
+  <Warning>3 critical rules are violated.
+  - Potentially dead Types
+  - Potentially dead Methods
+  - Avoid having different types with same name</Warning>
+  <Info>05/05/2014 18:10:54 NDepend analysis done. Duration: 00:02</Info>
+  <Info>05/05/2014 18:10:54 Building the report (standard).</Info>
+</InfoWarnings>
