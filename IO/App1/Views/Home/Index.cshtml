@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "title";
+}
+<button onclick="run()">KLIK</button>
+<div id="kotek">haaaa</div>
+<script type="text/javascript">
+    function run() {
+        var c = "string";
+        var a = "string2";
+        var i = 0;
+        for (var i = 0; i < 2000000; i++) {
+            i++;
+        
+
+            c = a + c;
+            if (i % 2 == 0) {
+                document.getElementById("kotek").style.backgroundColor = "#000";
+            } else {
+                document.getElementById("kotek").style.backgroundColor = "LightBlue";
+            }
+            
+        }
+        
+    }
+    
+</script>
