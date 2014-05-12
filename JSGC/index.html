@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+function withfree()
+{
+	console.log("Wywolanie ze zwalnianiem");
+	var i=1;
+	var A;
+	while(i<5000000)
+	{
+		A = new Array(500000);
+		i++;
+	}
+}
+
+function withoutfree()
+{
+	console.log("Wywolanie bez zwalniania");
+	
+	var i=1;
+	A = new Array(5000000);
+	while(i<5000000)
+	{
+		A[i] = new Array(500000);
+		i++;
+		if(i%10000==0)
+		{		
+			setTimeout(function() {
+				console.log("10k iter.");
+			}, 10);
+			//console.log("10k iter");
+		}
+	}
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<input id="W_FREE" type="button" value="ZE ZWALNIANIEM" onclick="withfree();" />
+<BR>
+<input id="WO_FREE" type="button" value="BEZ ZWALNIANIA" onclick="withoutfree();" />
+
+</BODY>
+
+</HTML>
