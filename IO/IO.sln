@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Application", "MVC_Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP_Obwod", "LSP_Obwod\LSP_Obwod.csproj", "{AA3E6327-4278-49BE-91F2-78DC8ED20861}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavascriptGarbageCollector", "JavascriptGarbageCollector\JavascriptGarbageCollector.csproj", "{076A54DA-C190-4A51-B549-083329EAC4DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{AA3E6327-4278-49BE-91F2-78DC8ED20861}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3E6327-4278-49BE-91F2-78DC8ED20861}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA3E6327-4278-49BE-91F2-78DC8ED20861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076A54DA-C190-4A51-B549-083329EAC4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076A54DA-C190-4A51-B549-083329EAC4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076A54DA-C190-4A51-B549-083329EAC4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076A54DA-C190-4A51-B549-083329EAC4DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

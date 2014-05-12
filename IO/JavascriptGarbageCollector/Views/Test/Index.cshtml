@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Garbage collector test</title>
+    </head>
+    <body>
+        <div id="div" style="background: blue; height: 50px">
+            <button onclick="init()">RUN</button> 
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    function init() {
+        var array = new Array();
+        while (true) {
+            array.push("xyz");
+        }
+    }
+</script>
