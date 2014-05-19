@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projektZautofack", "projektZautofack\projektZautofack.csproj", "{D8206228-954E-404D-87D4-9E93349B615A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{A7D7AB8F-3632-4A4C-AA4E-6C66F0B64A58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8206228-954E-404D-87D4-9E93349B615A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8206228-954E-404D-87D4-9E93349B615A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8206228-954E-404D-87D4-9E93349B615A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8206228-954E-404D-87D4-9E93349B615A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D7AB8F-3632-4A4C-AA4E-6C66F0B64A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D7AB8F-3632-4A4C-AA4E-6C66F0B64A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D7AB8F-3632-4A4C-AA4E-6C66F0B64A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D7AB8F-3632-4A4C-AA4E-6C66F0B64A58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
