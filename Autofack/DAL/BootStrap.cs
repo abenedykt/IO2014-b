@@ -6,6 +6,7 @@ using Autofac;
 using System.Web.Mvc;
 using System.Reflection;
 using Autofac.Integration.Mvc;
+using Castle.DynamicProxy;
 
 namespace Autofack.DAL
 {
@@ -34,7 +35,7 @@ namespace Autofack.DAL
         protected virtual void OnConfigure(ContainerBuilder builder)
         {
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
-            builder.RegisterType<DAL>().As<IDAL>().InstancePerLifetimeScope();
+            builder.RegisterType<DAL>().As<IDAL>().InstancePerLifetimeScope().Named<IInterceptor>("log-calls");
         }
     }
 }
