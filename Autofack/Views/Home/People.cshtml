@@ -1,0 +1,30 @@
+﻿@model Autofack.ViewModels.PersonViewModel
+
+@{
+    ViewBag.Title = "People";
+}
+
+<h2>People</h2>
+
+<div>
+    <h4>PersonViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+    </dl>
+</div>
