@@ -1,0 +1,17 @@
+<html>
+<body>
+    <script type="text/javascript">
+        (function () {
+
+            f1(1);
+            function f1(b) {
+                f2(f1(b));
+            }
+
+            function f2(b) {
+                f1(b);
+            }
+        })();
+    </script>
+</body>
+</html>
