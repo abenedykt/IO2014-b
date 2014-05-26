@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ClassLib;
 
 namespace MVCApp.Controllers
 {
@@ -10,9 +11,27 @@ namespace MVCApp.Controllers
     {
         //
         // GET: /Home/
-        public ActionResult Index()
+        public HomeController()
         {
-            return View();
+
         }
+
+        private ISomeStuff _stuff;
+
+        public HomeController(ISomeStuff stuff)
+        {
+            _stuff = stuff;
+        }
+
+        public ViewResult Index()
+        {
+            _stuff.MakeSomeWork();
+            return new ViewResult();
+        }
+
+        //public ActionResult Index()
+        //{
+        //    return View();
+        //}
 	}
 }
