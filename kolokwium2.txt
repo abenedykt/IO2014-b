@@ -38,13 +38,14 @@ klokwium.
 
 			public void MakeSomeWork(){
 				 Thread.Sleep(10000);
+				 throw new Exception("catch me if you can")
 			}
 		}
 
-	Nale¿y napisaæ kod, który pozwoli zmierzyæ czas wykonania _stuff.MakeSomeWork() bez modyfikacji klasy SomeLongRunningStuff oraz bez modyfikacji HomeController. 
+	Nale¿y napisaæ kod, który pozwoli przechwyciæ wyj¹tek z klasy SomeLongRunningStuff _stuff.MakeSomeWork() bez modyfikacji klasy SomeLongRunningStuff oraz bez modyfikacji HomeController. 
 
-	Wynik pomiary nale¿y wypisaæ za pomoc¹ Trace.WriteLine(...)
+	Treœæ wyj¹tku nale¿y wypisaæ za pomoc¹ Trace.WriteLine(...)
 
-	Ocena: modyfikacja klas SomeLongRunningStuff oraz HomeController po przez dodanie kodu mierz¹cego czas dyskfalifikuje rozwi¹zanie.
+	Ocena: modyfikacja klas SomeLongRunningStuff oraz HomeController po przez dodanie try...catch dyskfalifikuje rozwi¹zanie.
 
 	Dodatkowe punkty mo¿na uzyskaæ poprzez napisanie (przynajmniej czêœci) rozwi¹zania w TDD 
