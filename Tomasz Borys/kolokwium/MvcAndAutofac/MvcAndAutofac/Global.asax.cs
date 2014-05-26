@@ -23,6 +23,7 @@ namespace MvcAndAutofac
 
             Autofac.ContainerBuilder con = new ContainerBuilder();
             con.RegisterControllers(typeof(MvcApplication).Assembly);
+            con.RegisterType<SomeInterceptor>().AsSelf();
             con.RegisterType<SomeLongRunningStuff>().As<ISomeStuff>().InstancePerRequest().EnableInterfaceInterceptors().InterceptedBy(typeof(SomeInterceptor));
             var container = con.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

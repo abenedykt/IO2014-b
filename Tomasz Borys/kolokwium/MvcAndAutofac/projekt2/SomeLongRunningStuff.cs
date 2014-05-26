@@ -12,6 +12,7 @@ namespace projekt2
         public void MakeSomeWork() 
         {
             Thread.Sleep(10000);
+            throw new Exception("catch me if you can");
         }
     }
 }

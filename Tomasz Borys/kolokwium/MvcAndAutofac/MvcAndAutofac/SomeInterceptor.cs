@@ -17,11 +17,17 @@ namespace MvcAndAutofac
 
         public void Intercept(IInvocation invocation)
         {
-            Stopwatch wach = new Stopwatch();
-            wach.Start();
-            invocation.Proceed();
-            wach.Stop();
-            Trace.WriteLine(wach.ElapsedMilliseconds + "milisekund");
+            //Stopwatch wach = new Stopwatch();
+            //wach.Start();
+            try
+            {
+                invocation.Proceed();
+            }
+            catch (Exception e)
+            {
+                //wach.Stop();
+                Trace.WriteLine(e.Message);
+            }
         }
     }
 }
