@@ -20,7 +20,7 @@ namespace MVCApp
 
             ContainerBuilder builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
-            builder.RegisterType<SomeLongRunningStuff>().As<ISomeStuff>().InstancePerRequest().EnableClassInterceptors().InterceptedBy(typeof(ExceptionInterceptor));
+            builder.RegisterType<SomeLongRunningStuff>().As<ISomeStuff>().InstancePerRequest().EnableInterfaceInterceptors().InterceptedBy(typeof(ExceptionInterceptor));
             builder.Register( c => new ExceptionInterceptor());
             IContainer container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
