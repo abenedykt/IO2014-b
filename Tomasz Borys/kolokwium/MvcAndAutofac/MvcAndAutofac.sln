@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAndAutofac", "MvcAndAutofac\MvcAndAutofac.csproj", "{47769CC7-71B7-4F2D-8FEE-A66839F4934C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projekt2", "projekt2\projekt2.csproj", "{5F09DBFD-A802-4547-8420-166A9FB7601B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47769CC7-71B7-4F2D-8FEE-A66839F4934C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47769CC7-71B7-4F2D-8FEE-A66839F4934C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47769CC7-71B7-4F2D-8FEE-A66839F4934C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47769CC7-71B7-4F2D-8FEE-A66839F4934C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F09DBFD-A802-4547-8420-166A9FB7601B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F09DBFD-A802-4547-8420-166A9FB7601B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F09DBFD-A802-4547-8420-166A9FB7601B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F09DBFD-A802-4547-8420-166A9FB7601B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
