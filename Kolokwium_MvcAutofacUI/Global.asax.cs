@@ -31,8 +31,8 @@ namespace Kolokwium_MvcAutofacUI
                 .As<ISomeStuff>()
                 .InstancePerRequest()
                 .EnableInterfaceInterceptors()
-                .InterceptedBy(typeof(TimeLogger));
-            builder.Register(n => new TimeLogger());
+                .InterceptedBy(typeof(ExceptionLogger));
+            builder.Register(n => new ExceptionLogger());
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }

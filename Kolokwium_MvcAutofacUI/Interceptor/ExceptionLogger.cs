@@ -7,15 +7,18 @@ using System.Web;
 
 namespace Kolokwium_MvcAutofacUI.Interceptor
 {
-    public class TimeLogger : IInterceptor
+    public class ExceptionLogger : IInterceptor
     {
         public void Intercept(IInvocation invocation)
         {
-            var startTime = DateTime.UtcNow;
-            invocation.Proceed();
-            var endTime = DateTime.UtcNow;
-            Trace.WriteLine(string.Format("Wykonano w {0} sekund.", (endTime - startTime).TotalSeconds));
-
+            try
+            {
+                invocation.Proceed();
+            }
+            catch (Exception exc)
+            {
+                Trace.WriteLine(exc.Message);
+            }
         }
     }
 }

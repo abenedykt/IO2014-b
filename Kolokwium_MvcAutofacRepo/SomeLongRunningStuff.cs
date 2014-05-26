@@ -12,6 +12,7 @@ namespace Kolokwium_MvcAutofacRepo
         public void MakeSomeWork()
         {
             Thread.Sleep(10000);
+            throw new Exception("catch me if you can");
         }
     }
 }
