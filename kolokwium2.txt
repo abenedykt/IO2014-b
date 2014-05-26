@@ -1,0 +1,50 @@
+klokwium.
+
+1. proszê za³o¿yæ katalog kolokwium
+2. w nim za³o¿yæ 2 projekty
+3. w projekcie 1 nale¿y utworzyæ:
+	solutionm sk³adj¹cy siê z 2 projektów
+	projekt 1 - fizz buzz game
+	projekt 2 - testy do fizz buzz game
+
+	Rozwi¹zanie, nale¿y napisaæ w TDD, przy u¿yciu xunit. 
+
+	Ocena: poprawnoœæ rozwi¹zania oraz pokrycie kodu testami
+
+	Jakiekolkwiek testy bez asercji dyskwalifikuj¹ rozwi¹zanie - bezwzglêdnie
+
+4. w projekcie 2 nale¿y utworzyæ 2 projekty
+	projekt 1: mvc + autofac, zawiera 1 kontroler
+
+	public class HomeController: Controller{
+
+		private ISomeStuff _stuff;
+
+		public HomeController(ISomeStuff stuff){
+			_stuff = stuff;
+		}
+
+		public ViewResult Index(){
+			_stuff.MakeSomeWork();
+			return ViewResult();
+		}
+
+	}
+
+
+	projekt 2: zawiera 1 klasê:
+
+		public class SomeLongRunningStuff : ISomeStuff{
+
+			public void MakeSomeWork(){
+				 Thread.Sleep(10000);
+			}
+		}
+
+	Nale¿y napisaæ kod, który pozwoli zmierzyæ czas wykonania _stuff.MakeSomeWork() bez modyfikacji klasy SomeLongRunningStuff oraz bez modyfikacji HomeController. 
+
+	Wynik pomiary nale¿y wypisaæ za pomoc¹ Trace.WriteLine(...)
+
+	Ocena: modyfikacja klas SomeLongRunningStuff oraz HomeController po przez dodanie kodu mierz¹cego czas dyskfalifikuje rozwi¹zanie.
+
+	Dodatkowe punkty mo¿na uzyskaæ poprzez napisanie (przynajmniej czêœci) rozwi¹zania w TDD 
