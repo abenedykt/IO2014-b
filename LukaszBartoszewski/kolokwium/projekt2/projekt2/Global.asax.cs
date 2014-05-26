@@ -26,9 +26,12 @@ namespace projekt2
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
             builder.RegisterType<SomeLongRunningStuff>().
-                As<ISomeStuff>().InstancePerRequest().
+                As<ISomeStuff>().InstancePerDependency().
                 EnableInterfaceInterceptors().
                 InterceptedBy(typeof(MyOwnInterceptor));
+
+            var interceptor = new MyOwnInterceptor();
+            builder.RegisterInstance(interceptor);
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
