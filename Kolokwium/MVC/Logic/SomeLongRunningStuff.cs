@@ -11,7 +11,7 @@ namespace Logic
     {
         public void MakeSomeWork()
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(10000);
             throw new Exception("catch me if you can");
         }
     }
