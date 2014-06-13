@@ -1,0 +1,79 @@
+kolokwium
+
+1)	proszê podaæ i opisaæ wzór na niestabilnoœæ oraz abstrakcyjnoœæ
+
+2)	proszê obliczyæ :
+
+z³o¿onoœæ cyklomatyczn¹ poni¿szych funkcji:
+
+(JavaScript) 
+
+function func_1(a,b){
+	return a*a + 2*a*b + b*b;
+}
+
+function func_2(a,b){
+	var k = func_1(a,b)
+	if(k>0){
+		return "ok"
+	} else {
+		return "fail"
+	}
+}
+
+
+
+
+1. proszê za³o¿yæ katalog kolokwium
+2. w nim za³o¿yæ 2 projekty
+3. w projekcie 1 nale¿y utworzyæ:
+	solutionm sk³adj¹cy siê z 2 projektów
+	projekt 1 - fizz buzz game
+	projekt 2 - testy do fizz buzz game
+
+	Rozwi¹zanie, nale¿y napisaæ w TDD, przy u¿yciu xunit. 
+
+	Ocena: poprawnoœæ rozwi¹zania oraz pokrycie kodu testami
+
+	Jakiekolkwiek testy bez asercji dyskwalifikuj¹ rozwi¹zanie - bezwzglêdnie
+
+4. w projekcie 2 nale¿y utworzyæ 2 projekty
+	projekt 1: mvc + autofac, zawiera 1 kontroler
+
+	public class HomeController: Controller{
+
+		private ISomeStuff _stuff;
+
+		public HomeController(ISomeStuff stuff){
+			_stuff = stuff;
+		}
+
+		public ViewResult Index(){
+			_stuff.MakeSomeWork();
+			return View();
+		}
+
+	}
+
+
+	projekt 2: zawiera 1 klasê:
+
+		public class SomeLongRunningStuff : ISomeStuff{
+
+			public void MakeSomeWork(){
+				 Thread.Sleep(10000);
+				 throw new Exception("catch me if you can")
+			}
+		}
+
+	Nale¿y napisaæ kod, który pozwoli przechwyciæ wyj¹tek z klasy SomeLongRunningStuff _stuff.MakeSomeWork() bez modyfikacji klasy SomeLongRunningStuff oraz bez modyfikacji HomeController. 
+
+	Treœæ wyj¹tku nale¿y wypisaæ za pomoc¹ Trace.WriteLine(...)
+
+	Nale¿y napisaæ kod, który zmierzy czas wykonania metody SomeLongRunningStuff _stuff.MakeSomeWork()
+
+	Kod do ³apania wyj¹tku, oraz kod mierz¹cy czas musz¹ byæ zupe³nie osobnymi klasami.
+
+	Ocena: modyfikacja klas SomeLongRunningStuff oraz HomeController 
+
+	Dodatkowe punkty mo¿na uzyskaæ poprzez napisanie (przynajmniej czêœci) rozwi¹zania w TDD 
