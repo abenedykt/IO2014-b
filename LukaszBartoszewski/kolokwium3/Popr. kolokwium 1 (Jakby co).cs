@@ -14,11 +14,16 @@ namespace SomeLongRunningStuff
         // I = Ce / (Ce + Ca)
         // Ce (efferent Coupling) - ilośc klas od których nasza klasa jest zależna
         // Ca (afferent coupling) - ilość klas zależnych od naszej klasy
+	// wart. od 0 do 1. Jest to tak naprawdę w jakim stopniu możemy zmieniać
+	// nasz kod (dokonywać modyfikacji). Jeżeli niestabilnośc jest wysoka
+	// to nasz kod nie jest optymalny. Jeżeli nasz współ niest. jest wyższy od 'bodajże 0,7" 
+	// to jedna zmiana w jednej klasie
+	// która zależy od wielu innych powoduje 'wysyp exceptionów"
 
         // abstrakcyjność
         // Jest to zależność klas abstrakcyjnych, interfejsów, do ilośi wszystkich klas znajdującyh
         // się w naszym projekcie
-
+	// 
 
         //Złożoność 1
         public double func_1(int a, int b)
