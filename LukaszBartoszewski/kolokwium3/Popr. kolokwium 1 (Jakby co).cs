@@ -21,9 +21,11 @@ namespace SomeLongRunningStuff
 	// która zależy od wielu innych powoduje 'wysyp exceptionów"
 
         // abstrakcyjność
-        // Jest to zależność klas abstrakcyjnych, interfejsów, do ilośi wszystkich klas znajdującyh
+        // Jest to zależność klas abstrakcyjnych, interfejsów, do 
+	// ilośi wszystkich klas znajdującyh
         // się w naszym projekcie
-	// 
+	// Im wyższa abstrakcyjność tym kod staję się bardziej "elastyczny"
+	// i odwrotnie
 
         //Złożoność 1
         public double func_1(int a, int b)
